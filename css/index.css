@@ -169,6 +169,7 @@ footer {
 /* tablet view */
 @media (max-width:800px){
 /* tablet header */
+
 header{
   flex-direction: column-reverse;
   width:100%;
@@ -176,7 +177,95 @@ header{
   justify-content: center;
 }
 header nav a{
+  display:flex;
   width: 100%;
+  justify-content: space-evenly;
+  font-size: 20px;
+  padding-top: 5%;
+}
+
+/* table cta */
+
+.cta{
+  justify-content: center;
+  padding-top: 5%;
+}
+.cta img{
+  display:none;
+}
+/* tablet text size */
+h4{
+  font-size: 20px;
+}
+p{
+  font-size: 18px;
+}
+}
+
+/* mobile view */
+
+@media (max-width:500px){
+    
+/* mobile header */
+  
+.logo{
+    margin-top:5%;
+    margin-bottom:3%;
+    width: 35%;
+
+  }
+  header nav {
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  header nav a{
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    padding: 4%;
+    border-top: 1px solid black;
+    flex-grow: auto;
+    font-size: 28px;
+  }
+  .header-contact{
+    border-bottom:1px solid black;
+  }
+/* mobile main content */
+
+.main-content .top-content {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  padding: 0;
+}
+.main-content .bottom-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+.text-content{
+  padding: 1.5%;
+}
+.contact{
+  padding: 1.5%
+}
+
+/* mobile text size */
+
+p{
+  font-size: 26px;
+}
+h4{
+  font-size: 28px;
+}
+h1{
+  font-size: 120px;
+}
+
+.cta .cta-text button{
+  font-size: 25px;
 }
 }
